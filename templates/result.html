@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Prediction Result</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Recommended Sector</h1>
+        </header>
+        <div class="result">
+            <h2>Your Recommended Sector of Investment:</h2>
+            <p>{{ prediction }}</p>
+        </div>
+        <div class="explanation">
+            <h2>explanation for Recommending this Sector:</h2>
+            <div id="lime-output">
+                {{ explanation|safe }}
+            </div>
+        </div>
+        <a href="/" class="submit-btn">Want Another Recommendation?</a>
+    </div>
+</body>
+</html>

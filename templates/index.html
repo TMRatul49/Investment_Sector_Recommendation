@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/css/style.css">
+    <title>Investment Sector Recommendation</title>
+</head>
+<body>
+    <div class="container">
+        <h2>Investment Sector Recommendation</h2>
+        <form action="/result" method="POST">
+            <label for="gender">Your Gender?</label>
+            <select name="gender" id="gender">
+                <option value="1">Male</option>
+                <option value="0">Female</option>
+            </select>
+
+            <label for="age">Your Age?</label>
+            <input type="number" id="age" name="age" min="18" max="60" required>
+
+            <label for="working_professional">Do You Work?</label>
+            <select name="working_professional" id="working_professional">
+                <option value="1">Yes</option>
+                <option value="0">No</option>
+            </select>
+
+            <label for="annual_income">What is Your Annual Income?</label>
+            <input type="number" id="annual_income" name="annual_income" required>
+
+            <label for="investment_per_month">How Much Will You Investment per Month?</label>
+            <input type="number" id="investment_per_month" name="investment_per_month" required>
+
+            <label for="goal_for_investment">What is Your Goal for Investment?</label>
+            <select name="goal_for_investment" id="goal_for_investment">
+                <option value="0">Wealth generation</option>
+                <option value="1">Financial freedom</option>
+                <option value="2">Personal savings</option>
+                <option value="3">Education</option>
+                <option value="4">Marriage</option>
+                <option value="5">Buying House/Car</option>
+                <option value="6">Tax Saving</option>
+            </select>
+
+            <label for="duration">Duration (years):</label>
+            <input type="number" id="duration" name="duration" min="0" max="20" required>
+
+            <button type="submit">Recommend</button>
+        </form>
+    </div>
+</body>
+</html>
