@@ -15,34 +15,80 @@ body {
     padding: 30px;
     border-radius: 10px;
     width: 90%;
-    max-width: 500px;
+    max-width: 600px;
     text-align: center;
-    margin-right: 20px; /* Adjust margin to position the form more precisely */
+    margin-right: 20px; /* Adjust margin to position the content more precisely */
 }
 
-
-form {
-    display: flex;
-    flex-direction: column;
+header h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
 }
 
-label {
-    margin: 10px 0 5px;
+.result h2,
+.explanation h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
 }
 
-input, select, button {
+.result p,
+.explanation div {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
+#lime-output {
+    text-align: left;
+    margin: 20px 0;
+}
+
+.investment-sectors {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.investment-sectors h2 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 20px;
+}
+
+th, td {
     padding: 10px;
-    margin: 5px 0;
-    border: none;
-    border-radius: 5px;
+    text-align: left;
+    border: 1px solid #ddd;
 }
 
-button {
+th {
+    background-color: #333;
+    color: #fff;
+}
+
+tr:nth-child(even) {
+    background-color: #444;
+}
+
+tr:hover {
+    background-color: #555;
+}
+
+.submit-btn {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
     background-color: #28a745;
     color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
 }
 
-button:hover {
+.submit-btn:hover {
     background-color: #218838;
 }
