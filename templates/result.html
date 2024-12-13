@@ -8,21 +8,7 @@
 </head>
 <body>
     <div class="container">
-        <header>
-            <h1>Recommended Sector</h1>
-        </header>
-        <div class="result">
-            <h2>Your Recommended Sector of Investment:</h2>
-            <p>{{ prediction }}</p>
-        </div>
-        <div class="explanation">
-            <h2>Explanation for Recommending this Sector:</h2>
-            <div id="lime-output">
-                {{ explanation|safe }}
-            </div>
-        </div>
-        
-        <!-- Investment Sectors Table -->
+
         <div class="investment-sectors">
             <h2>Investment Sectors Details</h2>
             <table border="1">
@@ -71,6 +57,20 @@
                     </tr>
                 </tbody>
             </table>
+        </div>
+    
+        <header>
+            <h1>Recommended Sector</h1>
+        </header>
+        <div class="result">
+            <h2>Your Recommended Sector of Investment:</h2>
+            <p>{{ prediction }}</p>
+        </div>
+        <div class="explanation">
+            <h2>Explanation for Recommending this Sector:</h2>
+            <div id="lime-output">
+                {{ explanation|safe }}
+            </div>
         </div>
 
         <a href="/" class="submit-btn">Want Another Recommendation?</a>
