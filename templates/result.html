@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Prediction Result</title>
+    <title>Recommended Sector</title>
     <link rel="stylesheet" href="static/style.css">
 </head>
 <body>
@@ -16,11 +16,63 @@
             <p>{{ prediction }}</p>
         </div>
         <div class="explanation">
-            <h2>explanation for Recommending this Sector:</h2>
+            <h2>Explanation for Recommending this Sector:</h2>
             <div id="lime-output">
                 {{ explanation|safe }}
             </div>
         </div>
+        
+        <!-- Investment Sectors Table -->
+        <div class="investment-sectors">
+            <h2>Investment Sectors Details</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Investment Sectors</th>
+                        <th>Sector Serial No.</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Banking - RD, FD</td>
+                        <td>0</td>
+                    </tr>
+                    <tr>
+                        <td>Chit fund</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Crypto currency</td>
+                        <td>2</td>
+                    </tr>
+                    <tr>
+                        <td>Gold / Any other Materialistic investment</td>
+                        <td>3</td>
+                    </tr>
+                    <tr>
+                        <td>Marketing</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Mutual Funds</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>Not prepared</td>
+                        <td>6</td>
+                    </tr>
+                    <tr>
+                        <td>Real estate, Bonds</td>
+                        <td>7</td>
+                    </tr>
+                    <tr>
+                        <td>Stocks - Intraday, long term</td>
+                        <td>8</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
         <a href="/" class="submit-btn">Want Another Recommendation?</a>
     </div>
 </body>
