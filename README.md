@@ -21,7 +21,8 @@ This project proposes an explainable AI framework that leverages Machine Learnin
 
 ## 📁 Repository Structure
 
-nvestment_Sector_Recommendation/
+```text
+Investment_Sector_Recommendation/
 │
 ├── data/ # Dataset & preprocessing scripts
 ├── models/ # Training scripts & saved model files
@@ -29,7 +30,7 @@ nvestment_Sector_Recommendation/
 ├── app/ # Flask frontend (optional)
 ├── requirements.txt # Python dependencies
 ├── README.md # Project documentation
-
+```
 
 ---
 
