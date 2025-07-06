@@ -40,21 +40,22 @@ nvestment_Sector_Recommendation/
 ```bash
 git clone https://github.com/TMRatul49/Investment_Sector_Recommendation.git
 cd Investment_Sector_Recommendation
-
+```
 
 ### 2. Create Virtual Environment & Install Dependencies
 
 ```bash
-python3 -m venv venv
-source venv/bin/activate        # For Windows: venv\Scripts\activate
-pip install -r requirements.txt
-
+- python3 -m venv venv
+- source venv/bin/activate        # For Windows: venv\Scripts\activate
+- pip install -r requirements.txt
+```
 
 ### 3. Run the Web Interface
 
 ```bash
-cd app
-flask run
+- cd app
+- flask run
+```
 
 Then open http://localhost:5000 to interact with the recommendation system via a web interface.
 
